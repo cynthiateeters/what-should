@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Should I...?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>What Should I...?</h1>
+        <p class="subtitle">Your personalized recommendation tool</p>
+      </header>
+
+      <section class="preferences">
+        <h2>Tell me your preferences</h2>
+
+        <form id="preference-form">
+          <div class="form-group">
+            <label for="mood">What's your mood?</label>
+            <select id="mood" name="mood">
+              <option value="">Any mood</option>
+              <option value="relaxed">Relaxed</option>
+              <option value="energetic">Energetic</option>
+              <option value="focused">Focused</option>
+              <option value="adventurous">Adventurous</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="time">How much time do you have?</label>
+            <select id="time" name="time">
+              <option value="">Any amount</option>
+              <option value="15">15 minutes or less</option>
+              <option value="30">About 30 minutes</option>
+              <option value="60">About an hour</option>
+              <option value="120">A couple hours</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category preference?</label>
+            <select id="category" name="category">
+              <option value="">Any category</option>
+              <!-- Students will customize these options for their domain -->
+            </select>
+          </div>
+
+          <button type="submit" class="btn-primary">Get Recommendations</button>
+        </form>
+      </section>
+
+      <section class="results" id="results">
+        <h2>Recommendations</h2>
+        <div id="recommendation-list" class="recommendation-list">
+          <p class="placeholder">
+            Fill out your preferences and click "Get Recommendations" to see
+            results.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Scripts loaded in order: data first, then matching functions, then app -->
+    <script src="data.js"></script>
+    <script src="matching.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
