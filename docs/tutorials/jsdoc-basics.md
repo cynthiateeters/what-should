@@ -124,6 +124,7 @@ The first line (before any `@` tags) describes what the function does:
 | `number`  | `42`, `3.14`, `0`                  |
 | `boolean` | `true`, `false`                    |
 | `Object`  | `{ name: "Test", value: 42 }`      |
+| `Array`   | `[1, 2, 3]`, `["a", "b"]`          |
 
 ---
 
